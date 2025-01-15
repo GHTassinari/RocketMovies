@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Container } from './styles';
 
 export function Input( { icon: Icon, ...rest}){
@@ -8,3 +10,7 @@ export function Input( { icon: Icon, ...rest}){
         </Container>
     );
 }
+
+Input.propTypes = {
+    icon: PropTypes.elementType, // The icon will be a react element
+};
