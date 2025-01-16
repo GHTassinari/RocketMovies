@@ -2,15 +2,21 @@ import PropTypes from 'prop-types';
 
 import { Container } from './styles';
 
-export function Input( { icon: Icon, ...rest}){
+export function Input( { className, icon: Icon, ...rest}){
     return(
-        <Container>
+        <Container className={className}>
             {Icon && <Icon size={20}/>}
-            <input {...rest} />
+            <input  {...rest} />
         </Container>
     );
 }
 
 Input.propTypes = {
-    icon: PropTypes.elementType, // The icon will be a react element
+    icon: PropTypes.elementType,
+    className: PropTypes.string, 
+};
+
+Input.defaultProps = {
+    icon: null,
+    className: '',
 };

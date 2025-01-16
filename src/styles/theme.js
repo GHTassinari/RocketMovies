@@ -14,6 +14,8 @@ export default {
         GRAY_300: "#999591",
         GRAY_100: "#CAC4CF",
 
+        BORDER_GRAY: "#3E3B47",
+
 
         PINK: "#FF859B",
     }

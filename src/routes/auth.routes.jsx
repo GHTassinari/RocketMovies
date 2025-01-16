@@ -8,7 +8,6 @@ export function AuthRoutes() {
     <Routes>
       <Route path="/SignIn" element={<SignIn />}/>
       <Route path="/SignUp" element={<SignUp />}/>
-      <Route path="*" element={<Navigate to="/SignIn" replace />} />
     </Routes>
   );
 }

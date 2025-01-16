@@ -1,14 +1,18 @@
-import { Container, Profile } from './styles';
-
-import { Input } from '../../components/Input';
+import { Container, Profile, Search, Avatar } from './styles';
 
 export function Header(){
     return(
         <Container>
             <h1>RocketMovies</h1>
-            <Input />
+            <Search
+                placeholder="Search for the title" 
+            />
             <Profile>
-                <p>teste</p>
+                <div className="profileInfo">
+                    <strong className="profileUsername">Guilherme Tassinari</strong>
+                    <span>logout</span>
+                </div>
+                <Avatar to="/Profile" alt="Users Photo"></Avatar>
             </Profile>
         </Container>
     )
