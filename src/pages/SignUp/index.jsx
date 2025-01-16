@@ -24,7 +24,7 @@ export function SignUp() {
 
         <Button title="Sign up" />
 
-        <Link to="/">
+        <Link to="/SignIn">
           Already have an account?
         </Link>
       </Form>
