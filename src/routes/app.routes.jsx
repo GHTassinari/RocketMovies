@@ -5,7 +5,7 @@ import { Home } from "../pages/Home";
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/Home" element={<Home />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   );
 }

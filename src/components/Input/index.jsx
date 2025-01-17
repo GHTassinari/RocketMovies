@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import { Container } from './styles';
 
 export function Input( { className, icon: Icon, ...rest}){
@@ -10,13 +8,3 @@ export function Input( { className, icon: Icon, ...rest}){
         </Container>
     );
 }
-
-Input.propTypes = {
-    icon: PropTypes.elementType,
-    className: PropTypes.string, 
-};
-
-Input.defaultProps = {
-    icon: null,
-    className: '',
-};
