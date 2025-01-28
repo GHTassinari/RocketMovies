@@ -1,4 +1,5 @@
 import { Header } from "../../components/Header";
+import { Note } from "../../components/Note";
 
 import { FiPlus } from "react-icons/fi";
 
@@ -17,6 +18,46 @@ export function Home() {
           </ButtonWrapper>
         </section>
         <main>
+        <Note
+          data={{
+            title: "Interestellar",
+            tags: [
+              { id: "1", name: "react" },
+              { id: "2", name: "rocketseat" },
+            ],
+          }}
+        />
+
+        <Note
+          data={{
+            title: "Interestellar",
+            tags: [
+              { id: "1", name: "react" },
+              { id: "2", name: "rocketseat" },
+            ],
+          }}
+        />
+
+        <Note
+          data={{
+            title: "Interestellar",
+            tags: [
+              { id: "1", name: "react" },
+              { id: "2", name: "rocketseat" },
+            ],
+          }}
+        />
+
+        <Note
+          data={{
+            title: "Interestellar",
+            tags: [
+              { id: "1", name: "react" },
+              { id: "2", name: "rocketseat" },
+            ],
+          }}
+        />
+
         </main>
       </Content>
     </Container>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+  overflow-y: hidden;
 
   display: grid;
   grid-template-rows: 116px auto;
@@ -17,8 +18,24 @@ export const Content = styled.div`
   grid-area: "content";
   padding: 0 123px;
 
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+  }
+
   > section {
-    margin-top: 48px;
+    margin: 48px 0 12px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,27 +45,6 @@ export const Content = styled.div`
       font-weight: 400;
       font-size: 32px;
       line-height: 42px;
-    }
-  }
-
-  > main {
-    margin-top: 37px;
-    padding-bottom: 56px;
-    width: 100%;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-      width: 8px;
-    }
-    &::-webkit-scrollbar-track {
-      background-color: ${({theme}) => theme.COLORS.BACKGROUND};
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: ${({ theme }) => theme.COLORS.PINK};
-      border-radius: 4px;
-    }
-    &::-webkit-scrollbar-thumb:hover {
-    background-color: ${({ theme }) => theme.COLORS.PINK};
     }
   }
 
