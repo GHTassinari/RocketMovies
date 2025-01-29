@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Description } from "../../components/Description";
 
-export const Container = styled.button`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -23,12 +23,13 @@ export const Container = styled.button`
     margin-bottom: 8px;
   }
   
+  > footer {
+    margin-top: 15px;
+  }
 `;
 
 export const NoteDescription = styled(Description)`
-  height: 52px;
-  width: 100%;
-  max-width: 1121px;
+  height: 100%;
 
   margin-top: 8px;
 

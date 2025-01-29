@@ -1,19 +1,22 @@
-import { Container, Profile, Search, Avatar } from './styles';
+import { Container, Profile, Search, Title } from "./styles";
+import { Link } from "react-router-dom";
 
-export function Header(){
-    return(
-        <Container>
-            <h1>RocketMovies</h1>
-            <Search
-                placeholder="Search for the title" 
-            />
-            <Profile>
-                <div className="profileInfo">
-                    <strong className="profileUsername">Guilherme Tassinari</strong>
-                    <span>logout</span>
-                </div>
-                <Avatar to="/Profile" alt="Users Photo"></Avatar>
-            </Profile>
-        </Container>
-    )
+import { Avatar } from "../../components/Avatar";
+
+export function Header() {
+  return (
+    <Container>
+      <Title to="/">RocketMovies</Title>
+      <Search placeholder="Search for the title" />
+      <Profile>
+        <div className="profileInfo">
+          <strong className="profileUsername">Guilherme Tassinari</strong>
+          <span>logout</span>
+        </div>
+        <Link to="/Profile">
+          <Avatar size={64}></Avatar>
+        </Link>
+      </Profile>
+    </Container>
+  );
 }

@@ -11,13 +11,13 @@ export const Container = styled.header`
   gap: 64px;
   align-items: center;
   border-bottom: 1px solid ${({ theme }) => theme.COLORS.BORDER_GRAY};
+`;
 
-  > h1 {
-    color: ${({ theme }) => theme.COLORS.PINK};
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 31.65px;
-  }
+export const Title = styled(Link)`
+  color: ${({ theme }) => theme.COLORS.PINK};
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.65px;
 `;
 
 export const Search = styled(Input)`
@@ -58,13 +58,4 @@ export const Profile = styled.div`
       color: ${({ theme }) => theme.COLORS.INPUT_PLACEHOLDER};
     }
   }
-`;
-
-export const Avatar = styled(Link)`
-  height: 64px;
-  width: 64px;
-  border-radius: 35px;
-  border: 1px solid ${({ theme }) => theme.COLORS.BORDER_GRAY};
-  background: url(https://github.com/GHTassinari.png) no-repeat center center;
-  background-size: 64px 64px; 
 `;

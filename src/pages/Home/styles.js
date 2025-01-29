@@ -19,6 +19,7 @@ export const Content = styled.div`
   padding: 0 123px;
 
   overflow-y: scroll;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -51,10 +52,18 @@ export const Content = styled.div`
   > .movieWrapper {
     margin-right: 8px;
   }
+
+  > main {
+    > button {
+      all: unset;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
 `;
 
 export const Add = styled(Button)`
-  padding: 32px;
+  padding: 13px 32px;
   width: 180px;
 
   > svg {
