@@ -25,6 +25,7 @@ export const Container = styled.div`
   
   > footer {
     margin-top: 15px;
+    gap: 8px;
   }
 `;
 

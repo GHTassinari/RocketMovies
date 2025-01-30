@@ -14,7 +14,7 @@ export function Header() {
           <span>logout</span>
         </div>
         <Link to="/Profile">
-          <Avatar size={64}></Avatar>
+          <Avatar size={64} />
         </Link>
       </Profile>
     </Container>

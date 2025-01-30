@@ -16,7 +16,7 @@ export default {
 
         BORDER_GRAY: "#3E3B47",
 
-
+        CHARCOAL: "#282124",
         PINK: "#FF859B",
     }
 }
