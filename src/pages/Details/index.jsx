@@ -25,7 +25,7 @@ export function Details() {
         <section>
           <Return to="/">
             <FiArrowLeft />
-            Voltar
+            Return
           </Return>
           <div className="titleWrapper">
             <h1>{note.title}</h1>
