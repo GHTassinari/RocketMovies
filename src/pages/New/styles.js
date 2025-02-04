@@ -47,6 +47,60 @@ export const Content = styled.div`
       font-weight: 500;
     }
   }
+
+  > main {
+    > .firstRow {
+      display: flex;
+      flex-direction: row;
+      > .title {
+        max-width: 50%;
+        margin-right: 40px;
+
+        > input {
+          padding-left: 16px;
+        }
+      }
+
+      > .rating {
+        max-width: 50%;
+
+        > input {
+          padding-left: 16px;
+        }
+      }
+    }
+
+    > textarea {
+      background: ${({theme }) => theme.COLORS.INPUT_BACKGROUND };
+      width: 100%;
+      border-radius: 10px;
+      border: none;
+      margin: 40px 0px;
+      height: 274px;
+
+      padding: 19px 16px;
+
+      color: ${({ theme }) => theme.COLORS.WHITE };
+      resize: none;
+    }
+
+    > .markersTitle {
+      margin-bottom: 24px;
+      color: ${({ theme }) => theme.COLORS.GRAY_300 };
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    
+    > .tags {
+        padding: 16px;
+        max-width: 100%;
+        border-radius: 8px;
+        height: 88px;
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_BLACK };
+        gap: 24px;
+      }
+  }
 `;
 
 export const Return = styled(Link)`
