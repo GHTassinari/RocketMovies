@@ -1,3 +1,4 @@
+import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 import { NoteItem } from "../../components/NoteItem";
@@ -30,13 +31,14 @@ export function New() {
 
           <h2 className="markersTitle">Markers</h2>
           <div className="tags">
-            <NoteItem value="Ficção Científica" />
+            <NoteItem value="Science Fiction" />
             <NoteItem isnew="true"/>
           </div>
         </main>
 
         <footer>
-
+          <Button title="Delete movie" />
+          <Button title="Save changes" />
         </footer>
       </Content>
     </Container>

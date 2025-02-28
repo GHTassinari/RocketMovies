@@ -71,7 +71,7 @@ export const Content = styled.div`
     }
 
     > textarea {
-      background: ${({theme }) => theme.COLORS.INPUT_BACKGROUND };
+      background: ${({ theme }) => theme.COLORS.INPUT_BACKGROUND};
       width: 100%;
       border-radius: 10px;
       border: none;
@@ -80,28 +80,53 @@ export const Content = styled.div`
 
       padding: 19px 16px;
 
-      color: ${({ theme }) => theme.COLORS.WHITE };
+      color: ${({ theme }) => theme.COLORS.WHITE};
       resize: none;
     }
 
     > .markersTitle {
       margin-bottom: 24px;
-      color: ${({ theme }) => theme.COLORS.GRAY_300 };
+      color: ${({ theme }) => theme.COLORS.GRAY_300};
       font-weight: 400;
       font-size: 20px;
     }
 
-    
     > .tags {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-        padding: 16px;
-        border-radius: 8px;
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_BLACK };
-        gap: 24px;
-      }
+      padding: 16px;
+      border-radius: 8px;
+      background-color: ${({ theme }) => theme.COLORS.BACKGROUND_BLACK};
+      gap: 24px;
+    }
+  }
+
+  > footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+
+    gap: 40px;
+
+    margin-top: 40px;
+
+    button:first-child {
+      color: ${({theme}) => theme.COLORS.PINK };
+      background-color: ${({theme}) => theme.COLORS.BACKGROUND_BLACK };
+    }
+
+    button {
+      margin-top: 0;
+      height: 56px;
+      padding: 16px 0;
+
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
 `;
 
