@@ -93,10 +93,12 @@ export const Content = styled.div`
 
     
     > .tags {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
         padding: 16px;
-        max-width: 100%;
         border-radius: 8px;
-        height: 88px;
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_BLACK };
         gap: 24px;
       }

@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
+import { NoteItem } from "../../components/NoteItem";
 
 import { FiArrowLeft } from "react-icons/fi";
 
@@ -29,7 +30,8 @@ export function New() {
 
           <h2 className="markersTitle">Markers</h2>
           <div className="tags">
-
+            <NoteItem value="Ficção Científica" />
+            <NoteItem isnew="true"/>
           </div>
         </main>
 
