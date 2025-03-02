@@ -1,12 +1,18 @@
 import { FiMail, FiLock } from "react-icons/fi";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import { Input } from '../../components/Input';
-import { Button } from '../../components/Button';
+import { Input } from "../../components/Input";
+import { Button } from "../../components/Button";
 
 import { Container, Form, Background } from "./styles";
 
 export function SignIn() {
+  const handleLogin = () => {
+    const token = "generated_token";
+    localStorage.setItem("userToken", token);
+    window.location.reload();
+  };
+
   return (
     <Container>
       <Form>
@@ -19,11 +25,9 @@ export function SignIn() {
 
         <Input placeholder="Password" type="password" icon={FiLock} />
 
-        <Button title="Login" />
+        <Button title="Login" onClick={handleLogin}/>
 
-        <Link to="/SignUp">
-            Create an account
-        </Link>
+        <Link to="/SignUp">Create an account</Link>
       </Form>
 
       <Background />

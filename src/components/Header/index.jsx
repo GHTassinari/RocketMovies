@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import { Avatar } from "../../components/Avatar";
 
 export function Header() {
+  const handleLogout = () => {
+    localStorage.removeItem("userToken");
+    window.location.reload();
+  };
   return (
     <Container>
       <Title to="/">RocketMovies</Title>
@@ -11,7 +15,7 @@ export function Header() {
       <Profile>
         <div className="profileInfo">
           <strong className="profileUsername">Guilherme Tassinari</strong>
-          <span>logout</span>
+          <span onClick={handleLogout}>logout</span>
         </div>
         <Link to="/Profile">
           <Avatar size={64} />

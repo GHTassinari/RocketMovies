@@ -55,6 +55,8 @@ export const Profile = styled.div`
       size: 14px;
       line-height: 18px;
 
+      cursor: pointer;
+
       color: ${({ theme }) => theme.COLORS.INPUT_PLACEHOLDER};
     }
   }

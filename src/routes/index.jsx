@@ -4,9 +4,12 @@ import { AuthRoutes } from './auth.routes';
 import { AppRoutes } from './app.routes';
 
 export function Routes(){
+    const isAuthenticated = localStorage.getItem("userToken");
+
     return(
+        
         <BrowserRouter>
-            <AppRoutes />
+            {isAuthenticated ? <AppRoutes /> : <AuthRoutes />}
         </BrowserRouter>
     )
 }
